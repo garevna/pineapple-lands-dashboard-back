@@ -47,8 +47,6 @@ app.use((err, req, res) => {
   return res.json({ message: err.message })
 })
 
-app.get('/', (req, res) => res.status(200).send('Hello'))
-
-app.listen(3000)
+app.listen()
 
 module.exports = app
